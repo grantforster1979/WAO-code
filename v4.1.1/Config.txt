@@ -1,0 +1,58 @@
+# Configuration file for conveting WAO data to nc
+# Required by WAO_v4.1.py
+# Develped by Barbara Brooks <barbara.brooks@ncas.ac.uk>
+# 06/2020
+# Each input on a separate line
+
+# file version <a.b.c>
+# duration <year, month, day>
+# start date <all> or <DD, MM, YYYY>
+#	eg <day> and <all>:  an nc file for each day in data file will be created
+#   eg <day> and <23, 06, 2021>: an nc file for 23rd June 2021 will be created
+#   eg <day> and <all, 23, 06, 2021>: an nc file for each day in data file will be created
+#   eg <day> and <>: an nc file for each day in data file will be created
+#   eg <month> and <all>:  an nc file for each month in data file will be created
+#   eg <month> and <23, 06, 2021>: an nc file for June 2021 will be created
+#   eg <month> and <all, 23, 06, 2021>: an nc file for each month in data file will be created
+#   eg <month> and <>: an nc file for each month in data file will be created
+#   eg <year> and <all>:  an nc file for each year in data file will be created
+#   eg <year> and <23, 06, 2021>: an nc file for 2021 will be created
+#   eg <year> and <all, 23, 06, 2021>: an nc file for each year in data file will be created
+#   eg <year> and <>: an nc file for each year in data file will be created
+# data product <eg o3-concentration>
+# path to data file <full_path>
+# standard version <1.1 or 2.0>
+
+##### Start - do not remove #####
+1.0
+month
+all
+uea-t200up-1
+nox-noxy-concentration
+C:\Python\WAO-master\v4.1.1\Raw_data\uea-t200up-1\WAO_T200UP_ICE.csv
+2.0
+##### End - do not remove #####
+
+##### Possible combos ##### 
+<><ncas-????, nh4-concentration, not currently available>
+<checked><ncas-ceilometer-2, aerosol-backscatter, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\20171210\>
+<checked><ncas-ceilometer-2, cloud-base, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\20171210\>
+<checked><ncas-co2-1, co2-concentration, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\Example_Siemens_CO2_REAL_JUN2018.csv>
+<checked><ncas-ftir-1, ch4-n2o-co2-co-concentration, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\Example_FTIR_CH4_N2O_CO_CO2_JAN2019.csv>
+<checked><ncas-ghg-gc-fid-1, ch4-concentration, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\Example_FID_CH4_REAL_NOV2017.csv>
+<checked><ncas-ghg-gc-ecd-1, n2o-sf6-concentration, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\Example_ECD_N2O_SF6_REAL_MAR2017.csv>
+<checked><ncas-ghg-gc-ecd-1, sf6-concentration, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\Example_ECD_SF6_post2017_REAL_MAR2018.csv>
+<checked><ncas-o2-1, o2n2-concentration-ratio, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\Example_Oxilla_O2_REAL_JUN2018.csv>
+<checked><ncas-rga3-1, co-h2-concentration, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\Example_RGA_CO_H2_REAL_JUL2017.csv>
+<checked><ncas-rga3-1, h2-concentration, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\Example_RGA_H2_post2017_REAL_JAN2018.csv>
+<checked><uea-42i-nox-1, nox-noxy-concentration, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\Example_TECO42i_NO_NO2-NOx_REAL_SEP2018.csv>
+<checked><uea-43i-so2-1, so2-concentration, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\Example_TECO43i_SO2_REAL_SEP2018.csv>
+<checked><uea-49i-o3-1, o3-concentration, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\Example_TECO49i_O3_REAL_SEP2018.csv>
+<checked><uea-aws-1, surface-met, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\Example_Met_REAL_SEP2018.csv>
+<checked><uea-aws-2, surface-met, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\Example_Met_REAL_SEP2018.csv>
+<checked><uea-caps-1, no2-concentration, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\Example_CAPS_NO2_REAL_SEP2018.csv>
+<checked><uea-fidas200E-1, pm-concentration, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\Example_FIDAS_PM_REAL_SEP2018.csv>
+<><uea-radon-1, radon-concentration, not currently available>
+<checked><uea-sodar-rass-1, acoustic-backscatter-winds, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\0822.SDR>
+<checked><uea-sodar-rass-1, boundary-layer-temperature-profiles, C:\Users\lecbjb\Desktop\WORK\CODE\Python\WAO\WAO_NC\test data\0822.SDR>
+
